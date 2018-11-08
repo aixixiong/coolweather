@@ -181,7 +181,7 @@ public class WeatherActivity extends AppCompatActivity {
         weatherLayout.setVisibility(View.VISIBLE);
 
         Intent intent = new Intent(WeatherActivity.this,AutoUpdateService.class);
-        startActivity(intent);
+        startService(intent);
     }
 
     private void loadBingPic(){
